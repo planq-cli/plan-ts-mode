@@ -1,0 +1,52 @@
+================================================================================
+reserved: paren expression
+================================================================================
+
+{:id demo
+ :title "Demo"
+ :start (2026-05-01)}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair
+      (field
+        (identifier))
+      (plain_scalar))
+    (pair
+      (field
+        (identifier))
+      (string))
+    (pair
+      (field
+        (identifier))
+      (reserved
+        (paren)))))
+
+================================================================================
+reserved: bare number
+================================================================================
+
+{:id demo
+ :title "Demo"
+ :after [x 3]}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair
+      (field
+        (identifier))
+      (plain_scalar))
+    (pair
+      (field
+        (identifier))
+      (string))
+    (pair
+      (field
+        (identifier))
+      (vector
+        (plain_scalar)
+        (plain_scalar)))))

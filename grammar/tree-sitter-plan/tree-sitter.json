@@ -1,0 +1,30 @@
+{
+  "grammars": [
+    {
+      "name": "plan",
+      "camelcase": "Plan",
+      "scope": "source.plan",
+      "path": ".",
+      "file-types": [
+        "plan"
+      ],
+      "highlights": "queries/highlights.scm"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "tree-sitter grammar for Plan DSL v1 (.plan), used for Emacs treesit highlighting",
+    "links": {
+      "repository": "https://github.com/planq-cli/plan-ts-mode"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}

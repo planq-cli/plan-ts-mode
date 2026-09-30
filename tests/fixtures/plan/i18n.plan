@@ -1,0 +1,26 @@
+// CJK 与 emoji 语料：验证 UTF-8 Content-Length 与 UTF-16 position 组合。
+// ID 仍是 ASCII kebab-case（grammar 约束），多字节文本集中在 name 与
+// 反引号多行 description 中。
+{
+  :id i18n-demo
+  :version 1.0
+  :title "国际化演示 🚀 计划"
+  :description `
+    多字节文本：中文、emoji 😀 与符号 —— 用于校验位置编码。
+    第二行继续测试 UTF-16 列偏移。
+  `
+  :items [
+    {
+      :id task-cjk-a
+      :task "带 emoji 的任务 ✨"
+      :start 2026-06-01
+      :end 2026-06-05
+    }
+    {
+      :id milestone-done
+      :milestone "完成 🎉"
+      :date 2026-06-05
+      :after [@task-cjk-a]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+================================================================================
+references: names and explicit IDs keep distinct tokens
+================================================================================
+
+{:after [review @review "需求 评审" 评审]
+ :to [@alice {:person @bob :load 0.5}]}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair (field (identifier))
+      (vector (plain_scalar) (id_reference) (string) (plain_scalar)))
+    (pair (field (identifier))
+      (vector
+        (id_reference)
+        (map
+          (pair (field (identifier)) (id_reference))
+          (pair (field (identifier)) (plain_scalar)))))))
+
+================================================================================
+references: malformed IDs remain whole tokens for semantic diagnostics
+================================================================================
+
+{:after [@ @ID @张三 @person- @a/b]}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair (field (identifier))
+      (vector (id_reference) (id_reference) (id_reference) (id_reference) (id_reference)))))
+
+================================================================================
+references: unfinished ID inside unfinished containers
+================================================================================
+
+{:to [@
+
+--------------------------------------------------------------------------------
+
+(ERROR
+  (field (identifier))
+  (id_reference))
+
+================================================================================
+references: reader macros are rejected
+:error
+================================================================================
+
+{:after [#_ #tag "x" #{} 'name ~name ^name]}
+
+--------------------------------------------------------------------------------
+
+(document (map))

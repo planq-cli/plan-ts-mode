@@ -1,0 +1,40 @@
+==================
+include: complete site constraints
+==================
+
+{:version 1.0 :id release :title Release :items [{:include "phases/rollout.plan" :after [@preflight] :deadline 2026-10-31}]}
+
+---
+
+(document
+  (map
+    (pair (field (identifier)) (plain_scalar))
+    (pair (field (identifier)) (plain_scalar))
+    (pair (field (identifier)) (plain_scalar))
+    (pair
+      (field (identifier))
+      (vector
+        (map
+          (pair (field (identifier)) (string))
+          (pair (field (identifier)) (vector (id_reference)))
+          (pair (field (identifier)) (plain_scalar)))))))
+
+==================
+include: missing path remains recoverable
+==================
+
+{:version 1.0 :id release :title Release :items [{:include }]}
+
+---
+
+(document
+  (map
+    (pair (field (identifier)) (plain_scalar))
+    (pair (field (identifier)) (plain_scalar))
+    (pair (field (identifier)) (plain_scalar))
+    (pair
+      (field (identifier))
+      (vector
+        (map
+          (ERROR
+            (field (identifier))))))))

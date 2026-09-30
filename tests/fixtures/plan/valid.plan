@@ -1,0 +1,47 @@
+// 合法 DSL v1 计划：覆盖 summary/leaf/milestone、start/end、deadline、after、
+// 双引号名称、反引号多行 description 与行注释。供 tree-sitter、Emacs、LSP 与
+// native smoke 共用。
+{
+  :id authoring-demo
+  :version 1.0
+  :title 作者端演示计划
+  :description `
+    一个用于作者端工具链验收的最小计划：
+    高亮、诊断、补全、跳转、hover 与格式化。
+  `
+  :items [
+    {
+      :id design
+      :task 设计
+      :items [
+        {
+          :id draft
+          :task 草稿
+          :start 2026-05-04
+          :end 2026-05-08
+        }
+        {
+          :id review
+          :task 评审
+          :start 2026-05-11
+          :end 2026-05-13
+          :deadline 2026-05-15
+          :after [@draft]
+        }
+        {
+          :id design-done
+          :milestone 设计完成
+          :date 2026-05-13
+          :after [@review]
+        }
+      ]
+    }
+    {
+      :id build
+      :task 实现
+      :start 2026-05-14
+      :end 2026-05-22
+      :after [@design-done]
+    }
+  ]
+}

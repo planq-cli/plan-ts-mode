@@ -1,0 +1,25 @@
+{
+  :id product-discovery
+  :version 1.0
+  :title 产品需求
+  :items [
+    {
+      :id requirements
+      :task 需求阶段
+      :items [
+        {
+          :id discovery
+          :task 前期调研
+        }
+        {
+          :id prd-review
+          :task "撰写 PRD 并评审"
+        }
+      ]
+    }
+    {
+      :id delivery
+      :task 交付阶段
+    }
+  ]
+}

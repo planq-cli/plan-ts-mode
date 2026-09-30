@@ -1,0 +1,60 @@
+================================================================================
+comment: line comments as trivia and standalone
+================================================================================
+
+// header comment
+{:id demo
+ :title "Demo" // trailing comment
+ :description "n"}
+
+--------------------------------------------------------------------------------
+
+(document
+  (comment)
+  (map
+    (pair
+      (field
+        (identifier))
+      (plain_scalar))
+    (pair
+      (field
+        (identifier))
+      (string))
+    (comment)
+    (pair
+      (field
+        (identifier))
+      (string))))
+
+================================================================================
+string: escapes inside double quotes
+================================================================================
+
+{:name "escaped \" quote and \\ backslash"}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair
+      (field
+        (identifier))
+      (string))))
+
+================================================================================
+multiline: backtick text spanning lines
+================================================================================
+
+{:description `
+   line one
+   line two
+ `}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair
+      (field
+        (identifier))
+      (multiline))))

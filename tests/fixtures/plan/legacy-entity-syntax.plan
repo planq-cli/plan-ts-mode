@@ -1,0 +1,14 @@
+{:version "1.0"
+ :title release
+ :name "发布计划"
+ :people [
+   {:person owner
+    :name "负责人"
+    :role engineering}
+ ]
+ :items [
+   {:task implementation
+    :name "实现"}
+   {:milestone launch
+    :name "上线"}
+ ]}

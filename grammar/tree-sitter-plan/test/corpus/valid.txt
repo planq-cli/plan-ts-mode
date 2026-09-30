@@ -1,0 +1,289 @@
+================================================================================
+valid: leaf task with dates
+================================================================================
+
+{:version "1.0"
+ :id demo
+ :title "Demo"
+ :items
+ [{:id draft
+   :task "草稿"
+   :start "2026-05-04"
+   :end "2026-05-08"}]}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair
+      (field
+        (identifier))
+      (string))
+    (pair
+      (field
+        (identifier))
+      (plain_scalar))
+    (pair
+      (field
+        (identifier))
+      (string))
+    (pair
+      (field
+        (identifier))
+      (vector
+        (map
+          (pair
+            (field
+              (identifier))
+            (plain_scalar))
+          (pair
+            (field
+              (identifier))
+            (string))
+          (pair
+            (field
+              (identifier))
+            (string))
+          (pair
+            (field
+              (identifier))
+            (string)))))))
+
+================================================================================
+valid: completion state remains a generic field and identifier
+================================================================================
+
+{:id implementation
+   :task "Implementation"
+ :state done}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair
+      (field
+        (identifier))
+      (plain_scalar))
+    (pair
+      (field
+        (identifier))
+      (string))
+    (pair
+      (field
+        (identifier))
+      (plain_scalar))))
+
+================================================================================
+valid: person names are ordinary strings in assignment contexts
+================================================================================
+
+{:people [{:name "前端A" :role "Product Owner"}]
+ :to ["前端A" reviewer]}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair
+      (field
+        (identifier))
+      (vector
+        (map
+          (pair
+            (field
+              (identifier))
+            (string))
+          (pair
+            (field
+              (identifier))
+            (string)))))
+    (pair
+      (field
+        (identifier))
+      (vector
+        (string)
+        (plain_scalar)))))
+
+================================================================================
+valid: milestone with after reference
+================================================================================
+
+{:id demo
+ :title "Demo"
+ :items
+ [{:id done
+   :milestone "Done"
+   :date "2026-05-13"
+   :after [review]}]}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair
+      (field
+        (identifier))
+      (plain_scalar))
+    (pair
+      (field
+        (identifier))
+      (string))
+    (pair
+      (field
+        (identifier))
+      (vector
+        (map
+          (pair
+            (field
+              (identifier))
+            (plain_scalar))
+          (pair
+            (field
+              (identifier))
+            (string))
+          (pair
+            (field
+              (identifier))
+            (string))
+          (pair
+            (field
+              (identifier))
+            (vector
+              (plain_scalar))))))))
+
+================================================================================
+valid: task keeps work fields when items are added
+================================================================================
+
+{:id release
+ :task "Release"
+ :start "2026-09-01"
+ :end "2026-09-05"
+ :deadline "2026-09-10"
+ :after [prepare]
+ :to [alice]
+ :items
+ [{:id canary
+   :task "Canary"}]}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair
+      (field
+        (identifier))
+      (plain_scalar))
+    (pair
+      (field
+        (identifier))
+      (string))
+    (pair
+      (field
+        (identifier))
+      (string))
+    (pair
+      (field
+        (identifier))
+      (string))
+    (pair
+      (field
+        (identifier))
+      (string))
+    (pair
+      (field
+        (identifier))
+      (vector
+        (plain_scalar)))
+    (pair
+      (field
+        (identifier))
+      (vector
+        (plain_scalar)))
+    (pair
+      (field
+        (identifier))
+      (vector
+        (map
+          (pair
+            (field
+              (identifier))
+            (plain_scalar))
+          (pair
+            (field
+              (identifier))
+            (string)))))))
+
+================================================================================
+valid: name-first task and milestone draft shapes
+================================================================================
+
+{:items
+ [{:task "Build"}
+  {:task "Summary"
+   :items [{:task "Child"}]}
+  {:milestone "Gate"}]}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair
+      (field
+        (identifier))
+      (vector
+        (map
+          (pair
+            (field
+              (identifier))
+            (string)))
+        (map
+          (pair
+            (field
+              (identifier))
+            (string))
+          (pair
+            (field
+              (identifier))
+            (vector
+              (map
+                (pair
+                  (field
+                    (identifier))
+                  (string))))))
+        (map
+          (pair
+            (field
+              (identifier))
+            (string)))))))
+
+================================================================================
+valid: plain scalar token boundaries
+================================================================================
+
+{:version 1.0
+ :title demo
+ :name 甘湛健
+ :task 测试任务
+ :start 2026-09-02
+ :path API/SDK
+ :nil-value nil
+ :true-value true
+ :leading +value
+ :quoted "API//SDK"}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair (field (identifier)) (plain_scalar))
+    (pair (field (identifier)) (plain_scalar))
+    (pair (field (identifier)) (plain_scalar))
+    (pair (field (identifier)) (plain_scalar))
+    (pair (field (identifier)) (plain_scalar))
+    (pair (field (identifier)) (plain_scalar))
+    (pair (field (identifier)) (plain_scalar))
+    (pair (field (identifier)) (plain_scalar))
+    (pair (field (identifier)) (plain_scalar))
+    (pair (field (identifier)) (string))))

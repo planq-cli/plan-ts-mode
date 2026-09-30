@@ -1,0 +1,14 @@
+{
+  "name": "tree-sitter-plan",
+  "version": "1.0.0",
+  "description": "tree-sitter grammar for Plan DSL v1 (.plan), used for Emacs treesit highlighting",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "0.24.7"
+  }
+}

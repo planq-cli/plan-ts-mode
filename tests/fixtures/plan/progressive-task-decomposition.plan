@@ -1,0 +1,37 @@
+// 已排期父任务原位拆分：声明排期与分配保留但 inactive，约束继续作用于 rollup。
+{
+  :id progressive-decomposition
+  :version 1.0
+  :title 渐进式任务拆分
+  :items [
+    {
+      :id preparation
+      :task 发布准备
+      :start 2026-09-01
+      :end 2026-09-05
+    }
+    {
+      :id release
+      :task 发布
+      :description "从粗粒度排期逐步拆为可执行步骤"
+      :start 2026-09-08
+      :end 2026-09-12
+      :deadline 2026-09-18
+      :after [@preparation]
+      :to [@alice]
+      :items [
+        {
+          :id canary
+          :task 灰度发布
+          :start 2026-09-08
+          :end 2026-09-10
+        }
+        {
+          :id rollout
+          :task 全量发布
+          :after [@canary]
+        }
+      ]
+    }
+  ]
+}

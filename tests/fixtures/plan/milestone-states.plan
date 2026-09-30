@@ -1,0 +1,32 @@
+{
+  :id milestone-states
+  :version 1.0
+  :title 里程碑状态视觉回归
+  :items [
+    {
+      :id done
+      :milestone 已完成
+      :date 2026-09-04
+      :state done
+    }
+    {
+      :id overdue
+      :milestone 已逾期
+      :date 2026-09-05
+    }
+    {
+      :id active
+      :milestone 进行中
+      :date 2026-09-06
+    }
+    {
+      :id not-started
+      :milestone 未开始
+      :date 2026-09-07
+    }
+    {
+      :id unscheduled
+      :milestone 未排期
+    }
+  ]
+}

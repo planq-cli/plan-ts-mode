@@ -1,0 +1,16 @@
+{
+  :id release
+  :version 1.0
+  :title 发布计划
+  :items [
+    {
+      :id implementation
+      :task 实现
+    }
+    {
+      :id launch
+      :milestone 上线
+      :after [@implementation]
+    }
+  ]
+}

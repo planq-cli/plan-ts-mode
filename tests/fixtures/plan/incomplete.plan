@@ -1,0 +1,13 @@
+// 残缺语料：:items 向量未闭合、build 缺少结束括号。tree-sitter 的 ERROR 节点应
+// 限定在错误附近，前面的合法节点仍可高亮；Clojure 报 syntax/parse。
+{:version "1.0"
+ :id incomplete-demo
+ :title "残缺文档"
+ :items
+ [{:id design
+   :task "设计"
+   :start "2026-05-04"
+   :end "2026-05-08"}
+  {:id build
+   :task "实现"
+   :after [@design

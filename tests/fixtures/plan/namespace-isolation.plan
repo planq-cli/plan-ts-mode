@@ -1,0 +1,17 @@
+{
+  :id namespace-isolation
+  :version 1.0
+  :title 命名空间隔离
+  :items [
+    {
+      :id alice
+      :task "工作项 Alice"
+    }
+    {
+      :id build
+      :task 构建
+      :after [@alice]
+      :to [@alice]
+    }
+  ]
+}

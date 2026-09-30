@@ -1,0 +1,28 @@
+// 语义错误语料：可完整解析、可格式化，但含依赖环（a<->b）与缺失引用（ghost）。
+// 用于验证「仅语义错误仍允许格式化」以及诊断的 code/severity/range 与 CLI 等价。
+{
+  :id semantic-demo
+  :version 1.0
+  :title 语义错误演示
+  :items [
+    {
+      :id a
+      :task "任务 A"
+      :start 2026-05-01
+      :end 2026-05-05
+      :after [@b]
+    }
+    {
+      :id b
+      :task "任务 B"
+      :start 2026-05-06
+      :end 2026-05-10
+      :after [@a]
+    }
+    {
+      :id c
+      :task "任务 C"
+      :after [@ghost]
+    }
+  ]
+}

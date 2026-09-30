@@ -1,0 +1,24 @@
+{
+  :id milestone-workflow
+  :version 1.0
+  :title 里程碑完成流程
+  :items [
+    {
+      :id release
+      :task 发布
+      :items [
+        {
+          :id implementation
+          :task 实现
+          :state done
+        }
+        {
+          :id release-ready
+          :milestone 发布就绪
+          :date 2026-09-12
+          :after [@implementation]
+        }
+      ]
+    }
+  ]
+}

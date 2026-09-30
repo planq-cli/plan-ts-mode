@@ -1,0 +1,15 @@
+{:id legacy-references
+ :version 1.0
+ :title 旧引用迁移
+ :items [
+  {
+   :id review
+   :task 需求评审
+  }
+  {
+   :id build
+   :task 开发
+   :after ["需求评审"]
+   :to ["张三"]
+  }
+ ]}

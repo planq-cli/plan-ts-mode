@@ -1,0 +1,19 @@
+// reserved 语料：圆括号表达式与裸数字。tree-sitter 应解析为 reserved(paren)/
+// reserved(number)，Clojure 分析对每个 reserved 节点产生 syntax/reserved 诊断。
+{
+  :id reserved-demo
+  :version "1.0"
+  :title "保留语法演示"
+  :items [
+    {
+      :id a
+      :task "带裸数字"
+      :after [(x) 3]
+    }
+    {
+      :id b
+      :task "带圆括号"
+      :start (2026-05-01)
+    }
+  ]
+}

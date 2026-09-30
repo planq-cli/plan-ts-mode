@@ -1,0 +1,30 @@
+// highlight capture golden for queries/highlights.scm; guards grammar drift.
+// run with `tree-sitter test` in this dir. assertions point up to the code line.
+{:id demo
+// <- punctuation.bracket
+//^ property
+//     ^ variable
+ :title "n"
+//      ^ string
+ :note `x`
+//     ^ string.special
+ :after [x 3]}
+//         ^ variable
+
+{:id implementation
+// <- punctuation.bracket
+//^ property
+//     ^ variable
+ :task "Implementation"
+//     ^ string
+ :state done}
+//^ property
+//       ^ variable
+
+{:after [@review]}
+//       ^ variable
+//             ^ variable
+
+{:include "phases/rollout.plan"}
+//^ property
+//        ^ string.special

@@ -1,0 +1,232 @@
+{
+  "schemaVersion": "1",
+  "packageVersion": "1.0.0",
+  "treeSha256": "73fbd517cb82623a960d8a9bb079a258d7c7caf22297f52f8125d6bca4621290",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "sha256": "741278a6065fa17522387038d0bfcbe6d25705c2e24535ec04cb8f0f31100c5d"
+    },
+    {
+      "path": "emacs/lsp-bridge/install-langserver.sh",
+      "mode": "100755",
+      "sha256": "81cf23993c094431d0cb0cf5eea863e7e1a7c6688f524eb74d87bdd18bd1c4e1"
+    },
+    {
+      "path": "emacs/lsp-bridge/plan.json",
+      "mode": "100644",
+      "sha256": "330d244230fc8d29fe9e5acf10389c6c3a6da47f2edcfc4cdbb8abdeee2b740f"
+    },
+    {
+      "path": "emacs/lsp-bridge/README.md",
+      "mode": "100644",
+      "sha256": "405972db47a02f4e3ba024f18b850cd8377bf00e9276da6fcea19ef4c9363f08"
+    },
+    {
+      "path": "emacs/plan-ts-mode-tests.el",
+      "mode": "100644",
+      "sha256": "6ce0308da27f7d818da650ad8a5347286a53b0388f90122dba2bbf4a5feb9156"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/grammar.js",
+      "mode": "100644",
+      "sha256": "7b2882c0e633dbffd234a3e2e22f408ff08cb1e271a6ecd67a7ce7741339427e"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/LICENSE",
+      "mode": "100644",
+      "sha256": "9542cc2a5b622894ac9e73e0e533c6fef7b1ec57460b8bd16ad200a4e233d1d9"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/package-lock.json",
+      "mode": "100644",
+      "sha256": "a7ac5f5772b5a45453b9f0fe0333e5763ed014aae0841d659b45f4085bad91c8"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/package.json",
+      "mode": "100644",
+      "sha256": "bb11a013ad2600fc2f26305d9d9abe7580df8648b1d2f9f7f7c25de2bbe42787"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/queries/highlights.scm",
+      "mode": "100644",
+      "sha256": "d5ab62aa70d987862de8bb392d9ab252ceaa1a9babbaf70d803314af9a3976bd"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/README.md",
+      "mode": "100644",
+      "sha256": "c7a59fe3b97d58e859b23d45d56e7c407ead834f917c32aeff4ae06479ccc1d5"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/scripts/build-dylib.sh",
+      "mode": "100755",
+      "sha256": "7f9899b694b3284622c7c47fc63654ce63ab07666b50daa72a461dd02afb474d"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/scripts/install-grammar.sh",
+      "mode": "100755",
+      "sha256": "10d6962748bf7bddc3c4fc3bbc9587c8f726c7b9b6b5b647d8e5084533fd91b0"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/src/grammar.json",
+      "mode": "100644",
+      "sha256": "f6ece7334c4d044144c461fb754908f3b81a4b87a4b6309e30a28157b6452de4"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/src/node-types.json",
+      "mode": "100644",
+      "sha256": "681c720a80d64826127ec50751b7cc911bb1b9f1200abfa624838d5083985d06"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/src/parser.c",
+      "mode": "100644",
+      "sha256": "8aa6324eada438271181fc22b1557f0e6b772cf76d8af7f760858f0cacbcfa8d"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/src/tree_sitter/alloc.h",
+      "mode": "100644",
+      "sha256": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/src/tree_sitter/array.h",
+      "mode": "100644",
+      "sha256": "5bdf6ed1a78e3409fd443e085ca967a64c188a5d082aaf7f819bccd53a471c94"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/src/tree_sitter/parser.h",
+      "mode": "100644",
+      "sha256": "a1f6ef161fbaf48a0e10fca90ef5290a062462b307b3898aa562993853b9f80a"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/test/corpus/includes.txt",
+      "mode": "100644",
+      "sha256": "fb43e3ececf5561198af45bc790a43d9fbcf0e1b82d73d415262c84e74d1fafc"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/test/corpus/incomplete.txt",
+      "mode": "100644",
+      "sha256": "daeea302f7648211264395dbd5a1e1fc96980479c99b59c8ee638facd203a141"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/test/corpus/references.txt",
+      "mode": "100644",
+      "sha256": "e13fad3b4ea80acfadae3e5384cff4ff0adb8d89d40cbd19a1b66ca46236af24"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/test/corpus/reserved.txt",
+      "mode": "100644",
+      "sha256": "e9a0e0cbc796a5fb706915a97f138ed46040e422d712f6536956dd5417967000"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/test/corpus/trivia.txt",
+      "mode": "100644",
+      "sha256": "547e0bdfbd19d3c5296ecb4bd9594d3f1fefd8c49f66ed12e6ca62562674b8b8"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/test/corpus/valid.txt",
+      "mode": "100644",
+      "sha256": "79d712a6dab9218478f09a3bf28825f6d65cba24c26d6cf3bfc04e6094538dad"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/test/highlight/highlight.plan",
+      "mode": "100644",
+      "sha256": "514aa1bc5fe77f680132f58f1d651d324bee944cd42e8f6e1291f54fca2c54be"
+    },
+    {
+      "path": "grammar/tree-sitter-plan/tree-sitter.json",
+      "mode": "100644",
+      "sha256": "a47f5d2ef03957a205fce842afc9b73234e2162c1220c67c0c6e3f901ce5a9e0"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "plan-ts-mode.el",
+      "mode": "100644",
+      "sha256": "281c63b2e3798700b80dfb3c8e0bd7b293dd6a5b811eba9dbf2890e310ece6cd"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "sha256": "9c3de1fa01aa9f6f9ee0f359fcde17d9577ba64180e68806d426ce6f9cf51340"
+    },
+    {
+      "path": "test.sh",
+      "mode": "100755",
+      "sha256": "7227fcf4fa140113687c4bff81a7f9b5500b7d1a7cf3d08e37a137e2888f96e6"
+    },
+    {
+      "path": "tests/fixtures/plan/i18n.plan",
+      "mode": "100644",
+      "sha256": "b05f231b275320990488465e8fc907a790c09366f4d20725ea9d90d758e7cd7e"
+    },
+    {
+      "path": "tests/fixtures/plan/incomplete.plan",
+      "mode": "100644",
+      "sha256": "f3426d3b9e0fbcabd596c84d7889e2dd7ab0a09b9224e7cf5403e674c8a461ea"
+    },
+    {
+      "path": "tests/fixtures/plan/legacy-entity-syntax.plan",
+      "mode": "100644",
+      "sha256": "ae46a6064b09c73f0f83166046efcae40a51749534f067e06ba8d918386869c0"
+    },
+    {
+      "path": "tests/fixtures/plan/legacy-name-references.plan",
+      "mode": "100644",
+      "sha256": "4ee4ed4cef6fd32f0f6d227ed835c36f88354f1c43e2db1ac8feeda3cfcc749d"
+    },
+    {
+      "path": "tests/fixtures/plan/milestone-states.plan",
+      "mode": "100644",
+      "sha256": "6a1e4b0688c2536ef520067aec3eaa737d939b6cb3a47bbb14606f3a7786a024"
+    },
+    {
+      "path": "tests/fixtures/plan/milestone-workflow.plan",
+      "mode": "100644",
+      "sha256": "f0dc5f7a5113df51f84cc2c5881e494086c407c45d3cf9ed641dce16c4152464"
+    },
+    {
+      "path": "tests/fixtures/plan/namespace-isolation.plan",
+      "mode": "100644",
+      "sha256": "bc6ab2e7f380bbfd03135ac75ec63590138a138a4c35b83b3cc1acb73077953d"
+    },
+    {
+      "path": "tests/fixtures/plan/progressive-task-decomposition.plan",
+      "mode": "100644",
+      "sha256": "1e947db49aeb9a5fb28ca352feb781ce1148115547d3acc7d3ee55f62b7c150a"
+    },
+    {
+      "path": "tests/fixtures/plan/readable-entity-syntax.plan",
+      "mode": "100644",
+      "sha256": "de01b557f1c8be4032682a21ca63f1fac096c2d0aed050900301f19a89925e78"
+    },
+    {
+      "path": "tests/fixtures/plan/README.md",
+      "mode": "100644",
+      "sha256": "c111a4d8a7a8dab0193624d7f8e321f2052d969576e5d418295ccca6a217021c"
+    },
+    {
+      "path": "tests/fixtures/plan/reserved.plan",
+      "mode": "100644",
+      "sha256": "4a085be196a09473eab297e6d9430a32b1f0420c074761552bcd8ddf7d78784c"
+    },
+    {
+      "path": "tests/fixtures/plan/semantic.plan",
+      "mode": "100644",
+      "sha256": "f16b01819cac473494fd4a8422d10173cb7fcc06e11c29573ba1d488d250624a"
+    },
+    {
+      "path": "tests/fixtures/plan/sibling-ordering.plan",
+      "mode": "100644",
+      "sha256": "40fc41b9d916db45e8bb4a5afaf25410ed9fd6f095d246bc100953a6fb802338"
+    },
+    {
+      "path": "tests/fixtures/plan/valid.plan",
+      "mode": "100644",
+      "sha256": "5d1896123044e274cf99fef0ecf37677bcb7e45ca871f8d21e08096b75495bbe"
+    }
+  ]
+}

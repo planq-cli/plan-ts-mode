@@ -1,0 +1,27 @@
+================================================================================
+incomplete: stray value produces a localized ERROR, map keeps parsing
+================================================================================
+
+{:id demo
+ :title @@@
+ :items []}
+
+--------------------------------------------------------------------------------
+
+(document
+  (map
+    (pair
+      (field
+        (identifier))
+      (plain_scalar))
+    (pair
+      (field
+        (identifier))
+      (id_reference))
+    (ERROR
+      (id_reference)
+      (id_reference))
+    (pair
+      (field
+        (identifier))
+      (vector))))
